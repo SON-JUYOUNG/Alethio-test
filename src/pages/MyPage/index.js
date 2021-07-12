@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import * as S from './style';
 import OrderItem from './components/OrderItem';
-import { API_URL } from '../../config';
+import { API_URL } from 'config';
 
 function MyPage() {
   const [orderList, setOrderList] = useState([]);

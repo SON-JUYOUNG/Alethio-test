@@ -1,5 +1,5 @@
 import * as S from './style';
-import babyFace from '../../images/babyFace.png';
+import babyFace from 'images/babyFace.png';
 import { useHistory } from 'react-router-dom';
 
 function Service() {

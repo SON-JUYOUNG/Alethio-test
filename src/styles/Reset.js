@@ -8,7 +8,7 @@ const Reset = createGlobalStyle`
         box-sizing : border-box;
     }
 
-    :focus {
+    input:focus {
         outline: none;
     }
 `;

@@ -2,8 +2,8 @@ import { withRouter } from 'react-router';
 import { useHistory } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import * as S from './style';
-import logo from '../../images/alresioLogo.png';
-import menuIcon from '../../images/menuIcon.jpg';
+import logo from 'images/alresioLogo.png';
+import menuIcon from 'images/menuIcon.jpg';
 
 function Header() {
   const [clickdId, setClickdId] = useState('');

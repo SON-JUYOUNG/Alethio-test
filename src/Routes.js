@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './Components/header';
-import Service from './Pages/Service';
-import Login from './Pages/Login';
-import MyPage from './Pages/MyPage';
-import Detail from './Pages/MyPage/Detail';
-import SignUp from './Pages/SignUp';
+import Header from 'components/Header';
+import Service from 'pages/Service';
+import Login from 'pages/Login';
+import MyPage from 'pages/MyPage';
+import Detail from 'pages/MyPage/Detail';
+import SignUp from 'pages/SignUp';
 
 function Routes() {
   return (

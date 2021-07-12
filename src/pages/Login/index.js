@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { API_URL } from '../../config.js';
+import { API_URL } from 'config';
 import * as S from './style';
 
 function Login() {
@@ -12,7 +12,7 @@ function Login() {
     setLoginInfo({ ...loginInfo, [e.target.name]: e.target.value });
   };
 
-  const handleLogin = async () => {
+  const handleOnLogin = async () => {
     try {
       const res = await axios.post(`${API_URL}/login`, {
         email: loginInfo.email,
@@ -25,7 +25,6 @@ function Login() {
       if (error.message.includes('401')) {
         alert('비밀번호를 확인해주세요');
       }
-      console.error(error);
     }
   };
 
@@ -47,7 +46,7 @@ function Login() {
       </S.LoginForm>
 
       <S.LoginButtonWrap>
-        <S.LoginButton onClick={handleLogin}>로그인</S.LoginButton>
+        <S.LoginButton onClick={handleOnLogin}>로그인</S.LoginButton>
       </S.LoginButtonWrap>
     </S.Container>
   );

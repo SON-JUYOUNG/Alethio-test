@@ -8,7 +8,7 @@ function Detail({ match }) {
   const [itemDetail, setItemDetail] = useState({ id: 0, itemName: '' });
 
   useEffect(() => {
-    const getItemDetail = async () => {
+    const handleOngetItemDetail = async () => {
       try {
         const res = await axios.get(`${API_URL}/order/${id}`);
         setItemDetail({ id: res.data.id, itemName: res.data.itemName });
@@ -16,7 +16,7 @@ function Detail({ match }) {
         console.error(error);
       }
     };
-    getItemDetail();
+    handleOngetItemDetail();
   }, [id]);
 
   return (

@@ -1,11 +1,11 @@
-import axios from 'axios';
 import { useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { handleSignUpState } from '../../modules/user';
+import axios from 'axios';
+import { handleSignUpState } from 'modules/user';
 import * as S from './style';
-import { emailRegExp } from '../../utils';
-import { API_URL } from '../../config.js';
+import { emailRegExp } from 'utils';
+import { API_URL } from 'config.js';
 
 function SignUp() {
   const history = useHistory();
